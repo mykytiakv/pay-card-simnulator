@@ -1,2 +1,2 @@
-# pay-card-simnulator
-<h3>See my project <a href="https://mykytiakv.github.io/pay-card-simnulator/"> <strong>Pay card simulator</strong> </a> </h3>
+# pay-card-simulator
+<h3>See my project <a href="https://mykytiakv.github.io/pay-card-simulator/"> <strong>Pay card simulator</strong> </a> </h3>
