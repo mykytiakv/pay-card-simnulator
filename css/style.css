@@ -1,0 +1,177 @@
+form {
+    margin-top: 300px;
+}
+
+.main {
+    width: 700px;    
+    padding: 35px;
+    background-color: #fff;  
+    height:100vh;
+    margin: auto;
+    width: 50%;
+    
+}
+
+html,
+.pageBody {
+    background-color: #000;
+}
+
+.cardFront {
+    margin-top: 20px;
+    height: 270px;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    background-color: #C0C0C0;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 80px 50px;
+    background-position-x: 350px;
+    background-position-y: 20px;
+    overflow: auto;
+    transition-duration: 1.5s;
+    opacity: 0.8;
+}
+
+.cardBack {
+    margin-top: 20px;
+    height: 270px;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    background-color: #C0C0C0;
+    border-radius: 20px;
+    overflow: auto;
+    transform: rotateY(270deg);
+    transition-duration: 1.5s;
+    opacity: 0.8;
+}
+
+.delay {
+    transition-delay: 1.5s;
+}
+
+.move90 {
+    transform: rotateY(90deg);
+    transition-duration: 1.5s;
+}
+
+.move180 {
+    transform: rotateY(180deg);
+    transition-duration: 1.5s; 
+}
+
+
+.chip {
+    height: 35px;
+    width: 50px;
+    background-color: gray;
+    margin-top: 80px;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+
+.chip2 {
+    height: 35px;
+    width: 50px;
+    background-color: gray;
+    margin-top: 30px;
+    margin-left: 390px; 
+    border-radius: 5px;
+}
+
+#blackline {    
+    height: 50px;    
+    background-color: black;
+    margin-top: 30px;    
+}
+
+#whiteline {    
+    height: 45px;
+    width: 340px;
+    margin-top: 30px;  
+    background: white;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.master {
+    background-color: #000066;
+    background-image: url("../images/master_card.png");
+}
+
+.visa {
+    background-color: #540279;
+    background-image: url("../images/visa_logo.jpg"); 
+}
+
+.express {
+    background-color: #0d69b4;
+    background-image: url("../images/american_express.jpg");
+}
+
+#cardNumber {
+    margin-top: 20px;
+    margin-left: 55px;
+    font-family: Tahoma, sans-serif;
+    font-size: 28px;
+    color: #DCDCDC;
+}
+
+#fullName {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 55px;
+    font-family: Tahoma, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    float: left;
+    color: #DCDCDC;
+}
+
+.expiresLabel {
+    font-family: Tahoma, sans-serif;
+    font-size: 8px;
+    float: left;
+}
+
+#expiresValue {
+    font-size: 20px;
+    padding-left: 20px;
+    float: left;
+}
+
+.mounthLabel {
+    font-size: 10px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+.expiry {
+    margin-left: 300px;
+    color: #DCDCDC;
+}
+
+#cvc {
+    margin-top: 30px;
+    transform: rotateY(180deg);
+    margin-left: 40px;
+    float: left;
+    font-family: Tahoma, sans-serif; 
+    font-size: 20px;
+    color: #DCDCDC;
+}
+
+#backText {
+    width: 300px;
+    word-wrap:break-word;
+    margin-top: 30px;
+    transform: rotateY(180deg);
+    margin-left: 60px;
+    margin-right: 80px;
+    float: right;
+    font-family: Tahoma, sans-serif;
+    font-size: 8px;
+    color: #DCDCDC;
+}

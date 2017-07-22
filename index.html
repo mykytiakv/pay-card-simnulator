@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pay card simulator</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./js/script.js"></script>
+    </head>
+
+    <body data-ng-app="app">
+        <div class="pageBody">
+            <div class="main" data-ng-controller="cardController" data-ng-cloak="">
+
+                <!--Card Front begin-->
+                <div class="cardFront">
+                    <div class="chip"></div>
+                    <div id="cardNumber">{{cardNumber}}</div>
+                    <div id="fullName">{{fullName}}</div>
+                            
+                    <div class="expiry">   
+                        <div class="mounthLabel">Mounth/Year</div>    
+                        <div class="expiresLabel">Exspires<br> end</div>
+                        <div id="expiresValue">{{expiry}}</div>
+                    </div>
+                </div>
+                <!--Card Front end-->
+                        
+                <!--Card Back begin-->
+                <div class="cardBack">
+                    <div id="blackline"></div>
+                    <div id="cvc"> {{cvc}} </div>
+                    <div id="whiteline"></div>
+                    <div id="backText"> 
+                        <p>The card has been added to your wallet but will not be available for use for 
+                            this purchase. For support please visit https://github.com/mykytiakv.</p> 
+                    </div>
+                    <div class="chip2"></div> 
+                </div>
+                <!--Card end-->
+
+                <!--Form begin-->
+                <form class="form-groupe">
+                    Card number:<br>
+                    <input class="form-control" data-limit-to="19" type="text" placeholder="XXXX XXXX XXXX XXXX" 
+                    data-ng-model="basicCardNumber" data-ng-click="cardNumberClick()" 
+                    data-ng-change="cardNumberChange()"><br>
+                    
+                    Full name:<br>
+                    <input class="form-control" data-limit-to="18" type="text" placeholder="Test User" 
+                    data-ng-model="basicFullName" data-ng-click="fullNameClick()" data-ng-change="fullNameChange()"><br>
+                    
+                    Expiry:<br>
+                    <input class="form-control" data-limit-to="5" type="text" placeholder="MM/YY" 
+                    data-ng-model="basicExpiry" data-ng-click="expiryClick()" data-ng-change="expiryChange()"><br>
+                    
+                    CVC:<br>
+                    <input class="form-control" data-limit-to="3" type="number" placeholder="CVC" 
+                    data-ng-model="basicCvc" data-ng-click="cvcClick()" data-ng-change="cvcChange()"><br>
+                </form>
+                <!--Form end-->
+            </div>
+        </div>
+        
+        
+        
+    </body>
+</html>
