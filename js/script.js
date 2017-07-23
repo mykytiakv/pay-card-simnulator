@@ -49,7 +49,7 @@ app.controller('cardController', function($scope) {
   }
 
   $scope.cvcChange = function() {    
-    if($scope.basicCvc == '') { 
+    if($scope.basicCvc == null) { 
       $scope.cvc= '***';
     } else {
       $scope.cvc = $scope.basicCvc;
